@@ -7,17 +7,15 @@ CDGS is a confidence-aware depth-based optimization strategy for 3D Gaussian Spl
 
 1. **Depth Refinement and Alignment**: 
    - Utilizes Depth Anything V2 for initial depth estimation
-   - Aligns monocular depth estimates with sparse SfM depth data through gradient descent optimization
+   - Aligns monocular depth estimates with sparse SfM depth data
    - Improves geometric consistency across multiple views
 
 2. **Confidence-Aware Depth Regularization**:
-   - Generates confidence maps from both depth and RGB features
+   - Generates confidence maps for each depth map
    - Adaptively adjusts depth loss weights during optimization
    - Enables more stable optimization process
 
 ## Features
-- Enhanced geometric accuracy in 3D reconstruction
 - Improved geometric detail preservation in early training stages
 - More stable convergence behavior
-- Achieves comparable results with only 50% of training iterations
 - Comprehensive 2D-3D evaluation framework
